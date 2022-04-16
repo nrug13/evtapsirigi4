@@ -24,7 +24,7 @@ class General
                 }
 
 
-                if (cem >= 11)
+                if (cem > 11)
                 {
 
                     count++;
