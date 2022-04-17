@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Book
 {
@@ -6,7 +6,7 @@ namespace Book
     {
         static void Main(string[] args)
         {
-            Book book1 = new Book { BookName = "Qerb burkusu", AuthorName = "Cingiz Abdullayev", PublishedDate = new DateTime(2013, 12, 4) };
+            Book book1 = new Book { BookName = "Qerb burkusu", AuthorName = "Cingiz Abdullayev", PublishedDate = new DateTime(2013, 12, 4), PageCount=300 };
             Console.WriteLine(book1);
         }
     }
@@ -19,10 +19,8 @@ namespace Book
 
         public override string ToString()
         {
-            return AuthorName.ToString() + $" \"{ BookName.ToString()}\" " + (PublishedDate.Year).ToString();
+            return $" Kitab:{BookName}\n Muelilf:{AuthorName}\n Il:{PublishedDate}\n Sehife:{PageCount}  ";
         }
 
-    }
-}
     }
 }
