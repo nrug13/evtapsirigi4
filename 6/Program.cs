@@ -6,26 +6,7 @@ namespace Example//123456789
     {
         static void Main(string[] args)
         {
-            #region 1
-            //long a = Convert.ToInt32(Console.ReadLine());
-            //if (a < 10000000000 && a < 1000000000)
-            //{
-            //    while (a > 0)
-            //    {
-            //        string l = Convert.ToString(a);
-            //        if ((l.Length) % 2 != 0)
-            //        {                        
-            //            string num = Convert.ToString(a % 10);
-            //            Console.Write(num);
-            //        }
-            //        a = a / 10;
-            //    }
-            //}
-            //else
-            //{
-            //    Console.WriteLine("Exception founded");
-            //}
-            #endregion
+            
             int number = Int32.Parse(Console.ReadLine());
             int check = Check(number);
             double swap = Swap(check);
